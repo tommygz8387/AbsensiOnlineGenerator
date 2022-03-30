@@ -17,7 +17,7 @@ class Kode extends Migration
             $table->id();
             $table->string('kode');
             $table->string('user_id');
-            $table->string('user_id_get');
+            $table->string('user_id_get')->nullable();
             $table->timestamps();
         });
     }

@@ -22,9 +22,9 @@ class Absensi extends Migration
             $table->string('teaching_role');
             $table->date('date');
             $table->string('start');
-            $table->string('end');
-            $table->string('duration');
-            $table->string('kode_id');
+            $table->string('end')->nullable();
+            $table->string('duration')->nullable();
+            $table->string('kode_id')->nullable();
             $table->timestamps();
         });
     }
